@@ -1,6 +1,8 @@
+package Week1;
+
 import java.util.Scanner;
 
-public class Bj1000 {
+public class Bj1008 {
 
     public static void main(String[] args) {
 
@@ -8,20 +10,23 @@ public class Bj1000 {
         int a = sc.nextInt();
         int b = sc.nextInt();
 
-        compare(a,b);
+        divide(a,b);
 
         sc.close();
     }
 
-    public static void compare(int a, int b){
+    public static void divide(double a, double b){
+
+        double c = a/b;
 
         if(a < 0){
             System.out.println("a는 0보다 커야 합니다.");
         }else if(b >= 10){
             System.out.println("b는 10보다 작아야 합니다.");
         }else{
-            System.out.println(a + b);
+            System.out.println(c);
         }
     }
+
 
 }
